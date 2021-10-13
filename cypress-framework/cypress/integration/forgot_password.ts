@@ -1,0 +1,10 @@
+it('Successfull Login Scenario', () => {
+    cy.visit('https://me24.meest-group.com/')
+    cy.get('.v-expand > :nth-child(7) > .v-button').click({ force: true })
+    cy.wait(5000)
+    cy.get('.v-verticallayout > :nth-child(1) > .v-button').click({ force: true })
+    cy.get('#gwt-uid-9').type('abc@meest-group.com')
+    cy.get('.v-slot-primary > .v-button').click({ force: true })
+    cy.wait(3000)
+    cy.get('.v-slot-footer > .v-horizontallayout > .v-expand > .v-slot > .v-button').click({ force: true })
+})
