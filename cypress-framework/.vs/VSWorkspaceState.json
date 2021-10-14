@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\cypress",
-    "\\cypress\\integration",
-    "\\cypress\\integration\\1-getting-started",
-    "\\cypress\\integration\\2-advanced-examples"
+    "\\cypress\\integration"
   ],
-  "SelectedNode": "\\cypress\\integration\\forgot_password.ts",
+  "SelectedNode": "\\cypress\\integration\\Incorrect_Login.ts",
   "PreviewInSolutionExplorer": false
 }

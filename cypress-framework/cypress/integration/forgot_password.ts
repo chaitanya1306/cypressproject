@@ -1,4 +1,4 @@
-it('Successfull Login Scenario', () => {
+it('Forget Password Scenario', () => {
     cy.visit('https://me24.meest-group.com/')
     cy.get('.v-expand > :nth-child(7) > .v-button').click({ force: true })
     cy.wait(5000)
@@ -6,5 +6,7 @@ it('Successfull Login Scenario', () => {
     cy.get('#gwt-uid-9').type('abc@meest-group.com')
     cy.get('.v-slot-primary > .v-button').click({ force: true })
     cy.wait(3000)
+    cy.get('#gwt-uid-12').should('be.visible')
+    cy.get('#gwt-uid-12').should('contain.text', 'recovery')
     cy.get('.v-slot-footer > .v-horizontallayout > .v-expand > .v-slot > .v-button').click({ force: true })
 })
